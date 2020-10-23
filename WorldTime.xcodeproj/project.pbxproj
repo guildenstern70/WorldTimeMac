@@ -31,6 +31,7 @@
 		C05B026323C8842A00C692AF /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
 		C05B026523C8856D00C692AF /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		C05B026723C885CA00C692AF /* PreferencesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesView.xib; sourceTree = "<group>"; };
+		CA14D6B0254310920029C209 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 				C05B025423C883C000C692AF /* Main.storyboard */,
 				C05B025723C883C000C692AF /* Info.plist */,
 				C05B025823C883C000C692AF /* WorldTime.entitlements */,
+				CA14D6B0254310920029C209 /* README.md */,
 			);
 			path = WorldTime;
 			sourceTree = "<group>";
