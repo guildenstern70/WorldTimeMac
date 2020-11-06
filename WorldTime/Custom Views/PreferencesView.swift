@@ -2,64 +2,65 @@
 //  PreferencesView.swift
 //  WorldTime
 //
-//  Created by Gabriel Theodoropoulos.
-//  Copyright © 2020 AppCoda. All rights reserved.
+//  Created by Alessio Saltarin.
+//  Copyright © 2020 LittleLite.net. All rights reserved.
 //
 
 import Cocoa
 
 class PreferencesView: NSView, LoadableView {
 
-    // MARK: - IBOutlet Properties
-    
-    @IBOutlet weak var timezoneIDsPopup: NSPopUpButton!
-    
-    
-    // MARK: - Init
-    
+    @IBOutlet weak var rememberText: NSTextField!
+    var clipboardText: String? = nil
+        
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
-        
+                
         if load(fromNIBNamed: "PreferencesView") {
-            populateTimezoneIDs()
+            self.initializeTextToRemember()
         }
     }
-    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    
-    // MARK: - Custom Fileprivate Methods
-    
-    fileprivate func populateTimezoneIDs() {
-        // Remove default items from the popup button.
-        timezoneIDsPopup.removeAllItems()
-        
-        // Populate all available timezone identifiers to the popup.
-        // Since this is a demo app there's no need to apply any formatting.
-        for areaID in TimeZone.knownTimeZoneIdentifiers {
-            timezoneIDsPopup.addItem(withTitle: areaID)
-        }
-        
-        // If a timezone had been previously selected, then select it automatically.
-        guard let preferredTimezoneID = UserDefaults.standard.string(forKey: "timezoneID") else { return }
-        timezoneIDsPopup.selectItem(withTitle: preferredTimezoneID)
-    }
-    
-
-    
-    // MARK: - IBAction Methods
-        
     @IBAction func applySelection(_ sender: Any) {
-        UserDefaults.standard.set(timezoneIDsPopup.titleOfSelectedItem, forKey: "timezoneID")
-        dismissPreferences(self)
+        if (self.rememberText.stringValue.count > 0)
+        {
+            let clipboardString = self.rememberText.stringValue
+            print("Your text = " + clipboardString)
+            self.clipboardCopy(copyString: clipboardString)
+            self.dismissPreferences(self)
+        }
+        else
+        {
+            print("Clicked Apply but no value!")
+        }
     }
-    
     
     @IBAction func dismissPreferences(_ sender: Any) {
         self.window?.performClose(self)
+    }
+    
+    func initializeTextToRemember()
+    {
+        guard let savedText = UserDefaults.standard.string(forKey: "textToRemember") else { return }
+        
+        print("Got saved text = " + savedText)
+        self.clipboardText = savedText
+        self.rememberText.stringValue = savedText
+    }
+    
+    func clipboardCopy(copyString strCopy: String)
+    {
+        // Copy to clipboard
+        let pasteboard = NSPasteboard.general
+        pasteboard.declareTypes([.string], owner: nil)
+        pasteboard.setString(strCopy, forType: .string)
+        
+        // Persist for next times
+        UserDefaults.standard.set(strCopy, forKey: "textToRemember")
     }
     
 }

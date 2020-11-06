@@ -11,23 +11,23 @@
 		C05B025123C883BD00C692AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B025023C883BD00C692AF /* ViewController.swift */; };
 		C05B025323C883C000C692AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B025223C883C000C692AF /* Assets.xcassets */; };
 		C05B025623C883C000C692AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05B025423C883C000C692AF /* Main.storyboard */; };
-		C05B025F23C883D400C692AF /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B025E23C883D400C692AF /* DateTimeView.swift */; };
-		C05B026123C883E800C692AF /* DateTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05B026023C883E800C692AF /* DateTimeView.xib */; };
+		C05B025F23C883D400C692AF /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B025E23C883D400C692AF /* TitleView.swift */; };
+		C05B026123C883E800C692AF /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05B026023C883E800C692AF /* TitleView.xib */; };
 		C05B026423C8842A00C692AF /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B026323C8842A00C692AF /* LoadableView.swift */; };
 		C05B026623C8856D00C692AF /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B026523C8856D00C692AF /* PreferencesView.swift */; };
 		C05B026823C885CA00C692AF /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05B026723C885CA00C692AF /* PreferencesView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C05B024B23C883BD00C692AF /* WorldTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05B024B23C883BD00C692AF /* iCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05B024E23C883BD00C692AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C05B025023C883BD00C692AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C05B025223C883C000C692AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05B025523C883C000C692AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C05B025723C883C000C692AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C05B025823C883C000C692AF /* WorldTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorldTime.entitlements; sourceTree = "<group>"; };
-		C05B025E23C883D400C692AF /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
-		C05B026023C883E800C692AF /* DateTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateTimeView.xib; sourceTree = "<group>"; };
+		C05B025E23C883D400C692AF /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		C05B026023C883E800C692AF /* TitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleView.xib; sourceTree = "<group>"; };
 		C05B026323C8842A00C692AF /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
 		C05B026523C8856D00C692AF /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		C05B026723C885CA00C692AF /* PreferencesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesView.xib; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		C05B024C23C883BD00C692AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C05B024B23C883BD00C692AF /* WorldTime.app */,
+				C05B024B23C883BD00C692AF /* iCopy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				C05B026323C8842A00C692AF /* LoadableView.swift */,
-				C05B025E23C883D400C692AF /* DateTimeView.swift */,
-				C05B026023C883E800C692AF /* DateTimeView.xib */,
+				C05B025E23C883D400C692AF /* TitleView.swift */,
+				C05B026023C883E800C692AF /* TitleView.xib */,
 				C05B026523C8856D00C692AF /* PreferencesView.swift */,
 				C05B026723C885CA00C692AF /* PreferencesView.xib */,
 			);
@@ -91,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C05B024A23C883BD00C692AF /* WorldTime */ = {
+		C05B024A23C883BD00C692AF /* iCopy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C05B025B23C883C000C692AF /* Build configuration list for PBXNativeTarget "WorldTime" */;
+			buildConfigurationList = C05B025B23C883C000C692AF /* Build configuration list for PBXNativeTarget "iCopy" */;
 			buildPhases = (
 				C05B024723C883BD00C692AF /* Sources */,
 				C05B024823C883BD00C692AF /* Frameworks */,
@@ -103,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = WorldTime;
+			name = iCopy;
 			productName = WorldTime;
-			productReference = C05B024B23C883BD00C692AF /* WorldTime.app */;
+			productReference = C05B024B23C883BD00C692AF /* iCopy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C05B024A23C883BD00C692AF /* WorldTime */,
+				C05B024A23C883BD00C692AF /* iCopy */,
 			);
 		};
 /* End PBXProject section */
@@ -149,7 +149,7 @@
 				C05B025323C883C000C692AF /* Assets.xcassets in Resources */,
 				C05B026823C885CA00C692AF /* PreferencesView.xib in Resources */,
 				C05B025623C883C000C692AF /* Main.storyboard in Resources */,
-				C05B026123C883E800C692AF /* DateTimeView.xib in Resources */,
+				C05B026123C883E800C692AF /* TitleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +162,7 @@
 			files = (
 				C05B026623C8856D00C692AF /* PreferencesView.swift in Sources */,
 				C05B026423C8842A00C692AF /* LoadableView.swift in Sources */,
-				C05B025F23C883D400C692AF /* DateTimeView.swift in Sources */,
+				C05B025F23C883D400C692AF /* TitleView.swift in Sources */,
 				C05B025123C883BD00C692AF /* ViewController.swift in Sources */,
 				C05B024F23C883BD00C692AF /* AppDelegate.swift in Sources */,
 			);
@@ -351,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C05B025B23C883C000C692AF /* Build configuration list for PBXNativeTarget "WorldTime" */ = {
+		C05B025B23C883C000C692AF /* Build configuration list for PBXNativeTarget "iCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C05B025C23C883C000C692AF /* Debug */,

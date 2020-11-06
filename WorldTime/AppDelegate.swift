@@ -12,7 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusItem: NSStatusItem?
-    var dateTimeView: DateTimeView?
+    var titleView: TitleView?
     
     @IBOutlet weak var menu: NSMenu?
     @IBOutlet weak var firstMenuItem: NSMenuItem?
@@ -27,6 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        print("Welcome to iCopy")
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -48,9 +49,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         if let item = firstMenuItem {
-            dateTimeView = DateTimeView(frame: NSRect(x: 0.0, y: 0.0, width: 250.0, height: 170.0))
-            item.view = dateTimeView  // Assign this view in place
-            // of "Item" menu item
+            titleView = TitleView(frame: NSRect(x: 0.0, y: 0.0, width: 250.0, height: 60.0))
+            item.view = titleView  
         }
         
     }
@@ -59,10 +59,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 extension AppDelegate: NSMenuDelegate {
     func menuWillOpen(_ menu: NSMenu) {
-        dateTimeView?.startTimer()
-    }
-    func menuDidClose(_ menu: NSMenu) {
-        dateTimeView?.stopTimer()
+        // Initialize value here
     }
     
 }
