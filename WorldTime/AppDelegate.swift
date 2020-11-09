@@ -39,7 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
-        let itemImage = NSImage(named: "clock")
+        let itemImage = NSImage(named: "clip")
         itemImage?.isTemplate = true
         statusItem?.button?.image = itemImage
         
@@ -49,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         if let item = firstMenuItem {
-            titleView = TitleView(frame: NSRect(x: 0.0, y: 0.0, width: 250.0, height: 60.0))
+            titleView = TitleView(frame: NSRect(x: 0.0, y: 0.0, width: 150.0, height: 64.0))
             item.view = titleView  
         }
         

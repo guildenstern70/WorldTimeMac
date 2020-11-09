@@ -11,10 +11,9 @@ import Cocoa
 class TitleView: NSView, LoadableView {
 
     @IBOutlet weak var titleLabel: NSTextField!
+    @IBOutlet weak var storedValueLabel: NSTextField!
     
-    var timer: Timer?
-    var preferredTimezoneID: String?
-
+    var storedValue: String? = nil
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
@@ -24,13 +23,31 @@ class TitleView: NSView, LoadableView {
         
         guard let savedText = UserDefaults.standard.string(forKey: "textToRemember") else { return }
         
-        print("Got saved text for icon = " + savedText)
-        self.titleLabel.stringValue += " " + savedText
+        print("Got saved text  = " + savedText)
+        self.storedValue = savedText
+        self.storedValueLabel.stringValue = self.getSyntheticData()
     }
     
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    open func getSyntheticData() -> String
+    {
+        var synthData = "?"
+        if (self.storedValue != nil)
+        {
+            if (self.storedValue!.count > 5)
+            {
+                synthData = self.storedValue!.prefix(5) + "..."
+            }
+            else
+            {
+                synthData = self.storedValue!
+            }
+        }
+        return synthData
     }
     
 
