@@ -15,7 +15,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var titleView: TitleView?
     
     @IBOutlet weak var menu: NSMenu?
+    @IBOutlet weak var copyMenuItem: NSMenuItem!
     @IBOutlet weak var firstMenuItem: NSMenuItem?
+    
+    @IBAction func clipboardCopy(_ sender: Any) {
+        
+        guard let savedClip = UserDefaults.standard.string(forKey: "textToRemember") else {
+            self.copyMenuItem.isEnabled = false
+            return
+        }
+        
+        // Copy to clipboard
+        let pasteboard = NSPasteboard.general
+        pasteboard.declareTypes([.string], owner: nil)
+        pasteboard.setString(savedClip, forType: .string)
+        print("Clipboard copied -> " + savedClip)
+        
+    }
+    
+    @objc func validateMenuItem(menuItem: NSMenuItem) -> Bool {
+        print("Validating " + menuItem.title)
+        return true;
+    }
     
     @IBAction func showPreferences(_ sender: Any) {
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
@@ -26,12 +47,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
         print("Welcome to iCopy")
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        print("Goodbye..")
     }
     
     override func awakeFromNib() {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,7 +25,7 @@
 		C05B025223C883C000C692AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05B025523C883C000C692AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C05B025723C883C000C692AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C05B025823C883C000C692AF /* WorldTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorldTime.entitlements; sourceTree = "<group>"; };
+		C05B025823C883C000C692AF /* iCopy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCopy.entitlements; sourceTree = "<group>"; };
 		C05B025E23C883D400C692AF /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		C05B026023C883E800C692AF /* TitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleView.xib; sourceTree = "<group>"; };
 		C05B026323C8842A00C692AF /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		C05B024223C883BD00C692AF = {
 			isa = PBXGroup;
 			children = (
-				C05B024D23C883BD00C692AF /* WorldTime */,
+				C05B024D23C883BD00C692AF /* iCopy */,
 				C05B024C23C883BD00C692AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C05B024D23C883BD00C692AF /* WorldTime */ = {
+		C05B024D23C883BD00C692AF /* iCopy */ = {
 			isa = PBXGroup;
 			children = (
 				C05B024E23C883BD00C692AF /* AppDelegate.swift */,
@@ -70,10 +70,10 @@
 				C05B025223C883C000C692AF /* Assets.xcassets */,
 				C05B025423C883C000C692AF /* Main.storyboard */,
 				C05B025723C883C000C692AF /* Info.plist */,
-				C05B025823C883C000C692AF /* WorldTime.entitlements */,
+				C05B025823C883C000C692AF /* iCopy.entitlements */,
 				CA14D6B0254310920029C209 /* README.md */,
 			);
-			path = WorldTime;
+			path = iCopy;
 			sourceTree = "<group>";
 		};
 		C05B026223C8841600C692AF /* Custom Views */ = {
@@ -116,15 +116,15 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = AppCoda;
+				ORGANIZATIONNAME = "LittleLite Software";
 				TargetAttributes = {
 					C05B024A23C883BD00C692AF = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = C05B024623C883BD00C692AF /* Build configuration list for PBXProject "WorldTime" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = C05B024623C883BD00C692AF /* Build configuration list for PBXProject "iCopy" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -301,13 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WorldTime/WorldTime.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iCopy/iCopy.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9BTCAVN99V;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = WorldTime/Info.plist;
+				INFOPLIST_FILE = iCopy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -322,13 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WorldTime/WorldTime.entitlements;
+				CODE_SIGN_ENTITLEMENTS = iCopy/iCopy.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9BTCAVN99V;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = WorldTime/Info.plist;
+				INFOPLIST_FILE = iCopy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -342,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C05B024623C883BD00C692AF /* Build configuration list for PBXProject "WorldTime" */ = {
+		C05B024623C883BD00C692AF /* Build configuration list for PBXProject "iCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C05B025923C883C000C692AF /* Debug */,

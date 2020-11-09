@@ -18,8 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="250" height="97"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Gk-gy-uoz">
-                    <rect key="frame" x="17" y="62" width="214" height="24"/>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Gk-gy-uoz">
+                    <rect key="frame" x="18" y="53" width="214" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="Jrm-tw-JFo"/>
                     </constraints>
@@ -30,7 +30,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ree-7T-s03">
-                    <rect key="frame" x="17" y="41" width="212" height="16"/>
+                    <rect key="frame" x="18" y="35" width="212" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Stored Value" usesSingleLineMode="YES" id="LyU-Gh-398">
                         <font key="font" metaFont="systemThin" size="11"/>

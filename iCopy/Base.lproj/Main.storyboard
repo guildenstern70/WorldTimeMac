@@ -12,27 +12,31 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="WorldTime" id="1Xt-HY-uBw">
+                            <menuItem title="iCopy" id="1Xt-HY-uBw" userLabel="iCopy">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="WorldTime" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="iCopy" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
                                         <menuItem title="Item" id="geX-AI-w9k">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="ugc-ry-Juf"/>
-                                        <menuItem title="Copy" id="5kV-Vb-QxS">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Copy" keyEquivalent="c" id="HyH-Rt-Z2E">
                                             <connections>
-                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                                <action selector="clipboardCopy:" target="Voe-Tx-rLC" id="prb-ow-FG7"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Setup…" keyEquivalent="," id="BOF-NM-1cW">
+                                        <menuItem title="Setup…" keyEquivalent="x" id="BOF-NM-1cW">
                                             <connections>
                                                 <action selector="showPreferences:" target="Voe-Tx-rLC" id="jFs-1l-Dei"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="About" keyEquivalent="'" id="5kV-Vb-QxS">
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Quit" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
@@ -47,8 +51,9 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WorldTime" customModuleProvider="target">
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="iCopy" customModuleProvider="target">
                     <connections>
+                        <outlet property="copyMenuItem" destination="HyH-Rt-Z2E" id="enP-10-Gk9"/>
                         <outlet property="firstMenuItem" destination="geX-AI-w9k" id="x9p-7B-Cpq"/>
                         <outlet property="menu" destination="uQy-DD-JDr" id="YfN-oS-SEE"/>
                     </connections>
@@ -61,7 +66,7 @@
         <!--Clipboard Set-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Clipboard Set" storyboardIdentifier="preferencesID" id="XfG-lQ-9wD" customClass="ViewController" customModule="WorldTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Clipboard Set" storyboardIdentifier="preferencesID" id="XfG-lQ-9wD" customClass="ViewController" customModule="iCopy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="350" height="130"/>
                         <autoresizingMask key="autoresizingMask"/>
