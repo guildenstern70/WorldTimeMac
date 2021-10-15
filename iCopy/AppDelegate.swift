@@ -42,7 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
             guard let vc = storyboard.instantiateController(withIdentifier: .init(stringLiteral: "preferencesID")) as? ViewController else { return }
         let window = NSWindow(contentViewController: vc)
-            window.makeKeyAndOrderFront(nil)
+        window.orderFrontRegardless()
         
     }
     

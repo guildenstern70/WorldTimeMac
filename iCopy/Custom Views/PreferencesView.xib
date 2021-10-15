@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesView" customModule="WorldTime" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesView" customModule="iCopy" customModuleProvider="target">
             <connections>
                 <outlet property="rememberText" destination="w0M-fG-Woa" id="sE4-Cr-r8e"/>
             </connections>
@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-CC-wOA">
-                    <rect key="frame" x="254" y="13" width="82" height="32"/>
+                    <rect key="frame" x="253" y="13" width="84" height="33"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="cR5-bK-1rc"/>
                         <constraint firstAttribute="height" constant="21" id="diW-Xj-o77"/>
@@ -53,7 +53,7 @@ DQ
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PzK-fC-mg5">
-                    <rect key="frame" x="164" y="13" width="82" height="32"/>
+                    <rect key="frame" x="163" y="13" width="84" height="33"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="Cmh-J5-2p4"/>
                         <constraint firstAttribute="height" constant="21" id="nvS-Ed-RHj"/>
@@ -76,7 +76,7 @@ Gw
                 <constraint firstItem="pUX-CC-wOA" firstAttribute="leading" secondItem="PzK-fC-mg5" secondAttribute="trailing" constant="20" id="JPa-qN-BTs"/>
                 <constraint firstAttribute="bottom" secondItem="pUX-CC-wOA" secondAttribute="bottom" constant="20" id="Toi-S6-5v1"/>
             </constraints>
-            <point key="canvasLocation" x="-14" y="99"/>
+            <point key="canvasLocation" x="-89" y="120"/>
         </customView>
     </objects>
 </document>

@@ -9,13 +9,13 @@
 import Cocoa
 
 class PreferencesView: NSView, LoadableView {
-
+    
     @IBOutlet weak var rememberText: NSTextField!
     var clipboardText: String? = nil
         
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
-                
+        
         if load(fromNIBNamed: "PreferencesView") {
             self.initializeTextToRemember()
         }
@@ -62,5 +62,6 @@ class PreferencesView: NSView, LoadableView {
         // Persist for next times
         UserDefaults.standard.set(strCopy, forKey: "textToRemember")
     }
+    
     
 }
